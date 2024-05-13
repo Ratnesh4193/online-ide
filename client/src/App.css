@@ -1,3 +1,57 @@
-.terminal {
-  height: 20vh;
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* Styles for the container holding the editor */
+.ide__container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* Styles for the side panel */
+.ide__sidepanel {
+  flex: 0 0 auto; /* Fixed width */
+  width: 200px; /* Adjust as needed */
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+/* Styles for the main panel */
+.ide__mainpanel {
+  flex: 1; /* Take remaining vertical space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the selected file path */
+.editor__mainpanel p {
+  margin: 0;
+  padding: 10px;
+  background-color: #f0f0f0; /* Optional: add a background color */
+  border-bottom: 1px solid #ccc; /* Optional: add a border */
+}
+
+/* Styles for the editor and terminal */
+.editor__mainpanel > div {
+  flex: 1; /* Take remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the editor */
+.ide__editor {
+  flex: 1; /* Take remaining vertical space */
+  background-color: #fff; /* Set the editor background color */
+  overflow-y: auto; /* Allow scrolling if content exceeds container height */
+  height: 100%;
+}
+
+/* Styles for the terminal */
+.ide__terminal {
+  flex: 0 0 auto; /* Fixed height */
+  height: 20vh; /* Adjust as needed */
+  background-color: #f8f8f8;
+  overflow-y: auto; /* Allow scrolling if content exceeds container height */
 }

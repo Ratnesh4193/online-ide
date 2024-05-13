@@ -1,0 +1,32 @@
+/* FileTreeNode component */
+.file-node {
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .file-node:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .file-node::before {
+    content: "\f15b"; /* Unicode for folder icon */
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+  }
+  
+  /* FileTree component */
+  .file-tree {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .file-tree ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .file-tree li {
+    margin: 5px 0;
+  }
+  

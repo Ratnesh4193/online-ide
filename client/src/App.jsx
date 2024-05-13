@@ -1,14 +1,8 @@
-import "./App.css";
-import Terminal from "./components/Terminal";
+import React from "react";
+import Ide from "./screens/Ide";
 
-function App() {
-  return (
-    <div>
-      <div>
-        <Terminal />
-      </div>
-    </div>
-  );
-}
+const App = () => {
+  return <Ide />;
+};
 
 export default App;
